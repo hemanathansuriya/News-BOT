@@ -23,24 +23,34 @@ This project sends trending news updates directly to your WhatsApp using the Twi
 
 ## 🔐 Setup Instructions
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/news-whatsapp-bot.git
+cd news-whatsapp-bot
+```
 
+### 2️⃣ Create and activate virtual environment
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+pip install -r requirements.txt
+```
 
-
-##2️⃣Create and activate virtual environment
-pip install -r requirements.txt  
-
-
-##3️⃣ Create .env file and add your API keys
+### 3️⃣ Create `.env` file and add your API keys
+```
 NEWSDATA_API_KEY=your_newsdata_api_key
 TWILIO_SID=your_twilio_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
 FROM_WHATSAPP_NUMBER=whatsapp:+14155238886
 TO_WHATSAPP_NUMBER=whatsapp:+91XXXXXXXXXX
+```
 
-##4️⃣ Run the bot
+### 4️⃣ Run the bot
+```bash
 python bot.py
+```
 
-THANKYOU!..
+---
 
+🙏 Thank you!
 
